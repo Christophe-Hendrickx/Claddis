@@ -122,16 +122,16 @@ AncStateEstMatrix <- function(morph.matrix, tree, estimate.allchars=FALSE, estim
 
             }
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
             # Get likelihoods for each state in taxa and ancestors:
             state.likelihoods <- rerootingMethod(chartree, tipvals.mat, model=mymodel)$marginal.anc
-=======
+# =======
           # Remove any potential node labels on the character tree to avoid an error from rerootingMethod():
           chartree$node.label<-NULL 
 
           # Get likelihoods for each state in taxa and ancestors:
           state.likelihoods <- rerootingMethod(chartree, tipvals.mat, model=mymodel)$marginal.anc
->>>>>>> cca75c486bbf1fae4bff0c145455dc96156d764b
+# >>>>>>> cca75c486bbf1fae4bff0c145455dc96156d764b
                     
             # Get maximum likelihood:
             max.lik <- apply(state.likelihoods, 1, max)
